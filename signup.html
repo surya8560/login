@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+    body{
+        background-image: url("login.jpg");
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        width: 100%;
+    }
+    .txt{
+        color: white;
+    }
+    .bg{
+        border: solid;
+        border-color: white;
+        width: 400px;
+        padding: 20px;
+        text-align: center;
+    }
+    .ov{
+        position: relative;
+        left:100px;
+        display: flex;
+        flex-wrap: nowrap;
+        top: 100px;
+    }
+    h1{
+        color: white;
+        font-size:5vw;
+    }
+    .bt{
+        
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+    }
+    :hover.bt{
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+    .bt1{
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+        position: relative;
+        left: 65px;
+        bottom: 35px;
+        
+    }
+    :hover.a{
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+    #email{
+        left: 10px;
+        position: relative;
+    }
+    input{
+        border-radius: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+</style>
+<body>
+    <form class="ov"  method="post" action="signup.php">
+        <div class="bg">
+        <h1>Signup here!</h1>
+        <label for="email" class="txt" >Email:</label>
+        <input type="text" id="Email" name="Email"><br><br>
+        <label for="pass" class="txt">Password:</label>
+        <input type="text" id="password" name="password"><br><br>
+        <label for="pass" class="txt">Confirm Password:</label>
+        <input type="text" id="confirmpassword" name="confirmpassword"><br><br>
+        <input type="submit" value="submit" class="bt">
+        <input type="reset" value="reset" class="bt">
+        <p class="txt">I have an account?</p>
+        <p class="txt">Please</p>
+       <button  class="bt1"> <a href="login.html">Click here</a></button>
+        </div>
+    </form>
+</body>
+</html>
